@@ -1,0 +1,199 @@
+[gd_scene load_steps=3 format=3 uid="uid://ce7uejgpf7r8r"]
+
+[ext_resource type="PackedScene" uid="uid://clpitim8bp2ay" path="res://area_2d.tscn" id="1_leham"]
+[ext_resource type="Script" path="res://Button Maze 7.gd" id="2_ospth"]
+
+[node name="Maze 6" type="Node2D"]
+
+[node name="Area2D" parent="." instance=ExtResource("1_leham")]
+position = Vector2(1630, 394)
+
+[node name="Area2D2" parent="." instance=ExtResource("1_leham")]
+position = Vector2(1063, 665)
+
+[node name="Area2D3" parent="." instance=ExtResource("1_leham")]
+position = Vector2(1778, 395)
+
+[node name="Area2D4" parent="." instance=ExtResource("1_leham")]
+position = Vector2(1983, 674)
+
+[node name="Area2D5" parent="." instance=ExtResource("1_leham")]
+position = Vector2(2115, 670)
+
+[node name="Area2D6" parent="." instance=ExtResource("1_leham")]
+position = Vector2(1202, 667)
+
+[node name="Area2D7" parent="." instance=ExtResource("1_leham")]
+position = Vector2(1340, 669)
+
+[node name="Area2D8" parent="." instance=ExtResource("1_leham")]
+position = Vector2(1490, 671)
+
+[node name="Area2D9" parent="." instance=ExtResource("1_leham")]
+position = Vector2(1631, 671)
+
+[node name="Area2D11" parent="." instance=ExtResource("1_leham")]
+position = Vector2(1775, 669)
+
+[node name="Area2D14" parent="." instance=ExtResource("1_leham")]
+position = Vector2(1486, 389)
+
+[node name="Area2D15" parent="." instance=ExtResource("1_leham")]
+position = Vector2(923, 667)
+
+[node name="Area2D16" parent="." instance=ExtResource("1_leham")]
+position = Vector2(777, 668)
+
+[node name="Area2D17" parent="." instance=ExtResource("1_leham")]
+position = Vector2(887, 501)
+
+[node name="Area2D18" parent="." instance=ExtResource("1_leham")]
+position = Vector2(778, 609)
+
+[node name="Area2D19" parent="." instance=ExtResource("1_leham")]
+position = Vector2(781, 553)
+
+[node name="Area2D20" parent="." instance=ExtResource("1_leham")]
+position = Vector2(781, 498)
+
+[node name="Area2D21" parent="." instance=ExtResource("1_leham")]
+position = Vector2(884, 442)
+
+[node name="Area2D22" parent="." instance=ExtResource("1_leham")]
+position = Vector2(781, 442)
+
+[node name="Area2D23" parent="." instance=ExtResource("1_leham")]
+position = Vector2(1341, 392)
+
+[node name="Area2D24" parent="." instance=ExtResource("1_leham")]
+position = Vector2(1062, 383)
+
+[node name="Area2D25" parent="." instance=ExtResource("1_leham")]
+position = Vector2(877, 382)
+
+[node name="Area2D26" parent="." instance=ExtResource("1_leham")]
+position = Vector2(782, 379)
+
+[node name="Area2D27" parent="." instance=ExtResource("1_leham")]
+position = Vector2(884, 321)
+
+[node name="Area2D28" parent="." instance=ExtResource("1_leham")]
+position = Vector2(781, 320)
+
+[node name="Area2D29" parent="." instance=ExtResource("1_leham")]
+position = Vector2(1065, 324)
+
+[node name="Area2D30" parent="." instance=ExtResource("1_leham")]
+position = Vector2(1069, 267)
+
+[node name="Area2D31" parent="." instance=ExtResource("1_leham")]
+position = Vector2(943, 206)
+
+[node name="Area2D32" parent="." instance=ExtResource("1_leham")]
+position = Vector2(798, 205)
+
+[node name="Area2D33" parent="." instance=ExtResource("1_leham")]
+position = Vector2(1082, 208)
+
+[node name="Area2D34" parent="." instance=ExtResource("1_leham")]
+position = Vector2(638, 316)
+
+[node name="Area2D35" parent="." instance=ExtResource("1_leham")]
+position = Vector2(657, 205)
+
+[node name="Area2D36" parent="." instance=ExtResource("1_leham")]
+position = Vector2(494, 315)
+
+[node name="Area2D37" parent="." instance=ExtResource("1_leham")]
+position = Vector2(488, 207)
+
+[node name="Area2D38" parent="." instance=ExtResource("1_leham")]
+position = Vector2(351, 315)
+
+[node name="Area2D39" parent="." instance=ExtResource("1_leham")]
+position = Vector2(353, 256)
+
+[node name="Area2D40" parent="." instance=ExtResource("1_leham")]
+position = Vector2(351, 204)
+
+[node name="Area2D41" parent="." instance=ExtResource("1_leham")]
+position = Vector2(489, 149)
+
+[node name="Area2D42" parent="." instance=ExtResource("1_leham")]
+position = Vector2(349, 150)
+
+[node name="Area2D43" parent="." instance=ExtResource("1_leham")]
+position = Vector2(660, 149)
+
+[node name="Area2D44" parent="." instance=ExtResource("1_leham")]
+position = Vector2(661, 89)
+
+[node name="Area2D45" parent="." instance=ExtResource("1_leham")]
+position = Vector2(662, 27)
+
+[node name="Area2D46" parent="." instance=ExtResource("1_leham")]
+position = Vector2(517, 29)
+
+[node name="Area2D47" parent="." instance=ExtResource("1_leham")]
+position = Vector2(211, 150)
+
+[node name="Area2D48" parent="." instance=ExtResource("1_leham")]
+position = Vector2(66, 150)
+
+[node name="Area2D49" parent="." instance=ExtResource("1_leham")]
+position = Vector2(67, 89)
+
+[node name="Area2D50" parent="." instance=ExtResource("1_leham")]
+position = Vector2(67, 29)
+
+[node name="Area2D51" parent="." instance=ExtResource("1_leham")]
+position = Vector2(210, 29)
+
+[node name="Area2D52" parent="." instance=ExtResource("1_leham")]
+position = Vector2(355, 28)
+
+[node name="Area2D53" parent="." instance=ExtResource("1_leham")]
+position = Vector2(500, 28)
+
+[node name="Area2D54" parent="." instance=ExtResource("1_leham")]
+position = Vector2(1205, 389)
+
+[node name="Area2D55" parent="." instance=ExtResource("1_leham")]
+position = Vector2(1838, 669)
+
+[node name="Area2D57" parent="." instance=ExtResource("1_leham")]
+position = Vector2(1986, 403)
+
+[node name="Area2D58" parent="." instance=ExtResource("1_leham")]
+position = Vector2(1851, 391)
+
+[node name="Area2D59" parent="." instance=ExtResource("1_leham")]
+position = Vector2(2131, 405)
+
+[node name="Button Maze 7" type="Button" parent="."]
+offset_left = 181.0
+offset_top = 80.0
+offset_right = 297.0
+offset_bottom = 130.0
+text = "Go !"
+script = ExtResource("2_ospth")
+
+[node name="Area2D10" parent="." instance=ExtResource("1_leham")]
+position = Vector2(2281, 406)
+
+[node name="Area2D12" parent="." instance=ExtResource("1_leham")]
+position = Vector2(2265, 666)
+
+[node name="Area2D13" parent="." instance=ExtResource("1_leham")]
+position = Vector2(2265, 606)
+
+[node name="Area2D56" parent="." instance=ExtResource("1_leham")]
+position = Vector2(2260, 543)
+
+[node name="Area2D60" parent="." instance=ExtResource("1_leham")]
+position = Vector2(2263, 485)
+
+[node name="Area2D61" parent="." instance=ExtResource("1_leham")]
+position = Vector2(2268, 432)
+
+[connection signal="pressed" from="Button Maze 7" to="Button Maze 7" method="_on_pressed"]

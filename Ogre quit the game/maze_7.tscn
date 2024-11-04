@@ -1,0 +1,119 @@
+[gd_scene load_steps=4 format=3 uid="uid://pxwuyg8xgtrq"]
+
+[ext_resource type="PackedScene" uid="uid://clpitim8bp2ay" path="res://area_2d.tscn" id="1_dntun"]
+[ext_resource type="Script" path="res://Button Maze 8.gd" id="2_o62rt"]
+[ext_resource type="PackedScene" uid="uid://kedy14el5c24" path="res://зомби.tscn" id="3_7uf3d"]
+
+[node name="Maze 7" type="Node2D"]
+
+[node name="Area2D" parent="." instance=ExtResource("1_dntun")]
+position = Vector2(47, 132)
+
+[node name="Area2D2" parent="." instance=ExtResource("1_dntun")]
+position = Vector2(-98, 131)
+
+[node name="Area2D3" parent="." instance=ExtResource("1_dntun")]
+position = Vector2(-96, 71)
+
+[node name="Area2D4" parent="." instance=ExtResource("1_dntun")]
+position = Vector2(-96, 11)
+
+[node name="Area2D5" parent="." instance=ExtResource("1_dntun")]
+position = Vector2(-95, -49)
+
+[node name="Area2D6" parent="." instance=ExtResource("1_dntun")]
+position = Vector2(51, -49)
+
+[node name="Area2D7" parent="." instance=ExtResource("1_dntun")]
+position = Vector2(192, 134)
+
+[node name="Area2D8" parent="." instance=ExtResource("1_dntun")]
+position = Vector2(196, -48)
+
+[node name="Area2D9" parent="." instance=ExtResource("1_dntun")]
+position = Vector2(335, 136)
+
+[node name="Area2D10" parent="." instance=ExtResource("1_dntun")]
+position = Vector2(334, -46)
+
+[node name="Area2D11" parent="." instance=ExtResource("1_dntun")]
+position = Vector2(476, 134)
+
+[node name="Area2D12" parent="." instance=ExtResource("1_dntun")]
+position = Vector2(580, 106)
+
+[node name="Area2D13" parent="." instance=ExtResource("1_dntun")]
+position = Vector2(472, -46)
+
+[node name="Area2D14" parent="." instance=ExtResource("1_dntun")]
+position = Vector2(574, 4)
+
+[node name="Area2D15" parent="." instance=ExtResource("1_dntun")]
+position = Vector2(720, 107)
+
+[node name="Area2D16" parent="." instance=ExtResource("1_dntun")]
+position = Vector2(718, 4)
+
+[node name="Area2D17" parent="." instance=ExtResource("1_dntun")]
+position = Vector2(863, 5)
+
+[node name="Area2D18" parent="." instance=ExtResource("1_dntun")]
+position = Vector2(1003, 5)
+
+[node name="Area2D19" parent="." instance=ExtResource("1_dntun")]
+position = Vector2(999, 120)
+
+[node name="Area2D20" parent="." instance=ExtResource("1_dntun")]
+position = Vector2(998, 64)
+
+[node name="Area2D21" parent="." instance=ExtResource("1_dntun")]
+position = Vector2(720, 169)
+
+[node name="Area2D22" parent="." instance=ExtResource("1_dntun")]
+position = Vector2(996, 179)
+
+[node name="Area2D23" parent="." instance=ExtResource("1_dntun")]
+position = Vector2(1000, 240)
+
+[node name="Area2D24" parent="." instance=ExtResource("1_dntun")]
+position = Vector2(1001, 302)
+
+[node name="Area2D25" parent="." instance=ExtResource("1_dntun")]
+position = Vector2(718, 232)
+
+[node name="Area2D26" parent="." instance=ExtResource("1_dntun")]
+position = Vector2(716, 293)
+
+[node name="Area2D27" parent="." instance=ExtResource("1_dntun")]
+position = Vector2(716, 353)
+
+[node name="Area2D28" parent="." instance=ExtResource("1_dntun")]
+position = Vector2(1001, 362)
+
+[node name="Area2D29" parent="." instance=ExtResource("1_dntun")]
+position = Vector2(714, 414)
+
+[node name="Area2D30" parent="." instance=ExtResource("1_dntun")]
+position = Vector2(712, 475)
+
+[node name="Area2D31" parent="." instance=ExtResource("1_dntun")]
+position = Vector2(1001, 426)
+
+[node name="Area2D32" parent="." instance=ExtResource("1_dntun")]
+position = Vector2(1001, 486)
+
+[node name="Area2D33" parent="." instance=ExtResource("1_dntun")]
+position = Vector2(858, 476)
+
+[node name="Button Maze 8" type="Button" parent="."]
+offset_left = 844.0
+offset_top = 400.0
+offset_right = 937.0
+offset_bottom = 438.0
+text = "Go !"
+script = ExtResource("2_o62rt")
+
+[node name="зомби" parent="." instance=ExtResource("3_7uf3d")]
+position = Vector2(-86, 62)
+
+[connection signal="pressed" from="Button Maze 8" to="Button Maze 8" method="_on_pressed"]

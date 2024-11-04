@@ -1,0 +1,50 @@
+[gd_scene load_steps=4 format=3 uid="uid://ckj2koy585x61"]
+
+[ext_resource type="Script" path="res://ice_cream_3.gd" id="1_3o8dk"]
+[ext_resource type="Texture2D" uid="uid://d3di7wje3n64g" path="res://ice.png" id="1_jxjwb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o4ggl"]
+size = Vector2(30, 63)
+
+[node name="Ice cream 3" type="Area2D"]
+script = ExtResource("1_3o8dk")
+
+[node name="Ice" type="Sprite2D" parent="."]
+position = Vector2(-5.96046e-07, 0.499999)
+scale = Vector2(0.326087, 0.344262)
+texture = ExtResource("1_jxjwb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_o4ggl")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+autostart = true
+
+[node name="Timer2" type="Timer" parent="."]
+wait_time = 6.0
+one_shot = true
+autostart = true
+
+[node name="Timer3" type="Timer" parent="."]
+wait_time = 7.0
+one_shot = true
+autostart = true
+
+[node name="Timer4" type="Timer" parent="."]
+wait_time = 8.0
+one_shot = true
+autostart = true
+
+[node name="Timer5" type="Timer" parent="."]
+wait_time = 9.0
+one_shot = true
+autostart = true
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Timer2" to="." method="_on_timer_2_timeout"]
+[connection signal="timeout" from="Timer3" to="." method="_on_timer_3_timeout"]
+[connection signal="timeout" from="Timer4" to="." method="_on_timer_4_timeout"]
+[connection signal="timeout" from="Timer5" to="." method="_on_timer_5_timeout"]

@@ -1,0 +1,166 @@
+[gd_scene load_steps=5 format=3 uid="uid://dxpyyujoepdkl"]
+
+[ext_resource type="PackedScene" uid="uid://clpitim8bp2ay" path="res://area_2d.tscn" id="1_2y8os"]
+[ext_resource type="Script" path="res://maze_8.gd" id="1_neotj"]
+[ext_resource type="PackedScene" uid="uid://kedy14el5c24" path="res://зомби.tscn" id="3_qg1qd"]
+[ext_resource type="PackedScene" uid="uid://bdrd3vt2nf7wx" path="res://земля.tscn" id="4_xrt72"]
+
+[node name="Maze 8" type="Node2D"]
+script = ExtResource("1_neotj")
+
+[node name="Area2D" parent="." instance=ExtResource("1_2y8os")]
+position = Vector2(1035, 310)
+
+[node name="Area2D2" parent="." instance=ExtResource("1_2y8os")]
+position = Vector2(1038, 369)
+
+[node name="Area2D3" parent="." instance=ExtResource("1_2y8os")]
+position = Vector2(1033, 426)
+
+[node name="Area2D4" parent="." instance=ExtResource("1_2y8os")]
+position = Vector2(1035, 249)
+
+[node name="Area2D5" parent="." instance=ExtResource("1_2y8os")]
+position = Vector2(891, 248)
+
+[node name="Area2D6" parent="." instance=ExtResource("1_2y8os")]
+position = Vector2(744, 246)
+
+[node name="Area2D7" parent="." instance=ExtResource("1_2y8os")]
+position = Vector2(600, 243)
+
+[node name="Area2D8" parent="." instance=ExtResource("1_2y8os")]
+position = Vector2(602, 306)
+
+[node name="Area2D9" parent="." instance=ExtResource("1_2y8os")]
+position = Vector2(599, 369)
+
+[node name="Area2D10" parent="." instance=ExtResource("1_2y8os")]
+position = Vector2(597, 432)
+
+[node name="Area2D11" parent="." instance=ExtResource("1_2y8os")]
+position = Vector2(595, 490)
+
+[node name="Area2D12" parent="." instance=ExtResource("1_2y8os")]
+position = Vector2(585, 614)
+
+[node name="Area2D13" parent="." instance=ExtResource("1_2y8os")]
+position = Vector2(727, 614)
+
+[node name="Area2D14" parent="." instance=ExtResource("1_2y8os")]
+position = Vector2(872, 614)
+
+[node name="Area2D15" parent="." instance=ExtResource("1_2y8os")]
+position = Vector2(1016, 614)
+
+[node name="Area2D16" parent="." instance=ExtResource("1_2y8os")]
+position = Vector2(1021, 550)
+
+[node name="Area2D17" parent="." instance=ExtResource("1_2y8os")]
+position = Vector2(1027, 492)
+
+[node name="Area2D18" parent="." instance=ExtResource("1_2y8os")]
+position = Vector2(587, 527)
+
+[node name="Area2D19" parent="." instance=ExtResource("1_2y8os")]
+position = Vector2(443, 527)
+
+[node name="Area2D20" parent="." instance=ExtResource("1_2y8os")]
+position = Vector2(443, 614)
+
+[node name="Area2D21" parent="." instance=ExtResource("1_2y8os")]
+position = Vector2(301, 527)
+
+[node name="Area2D22" parent="." instance=ExtResource("1_2y8os")]
+position = Vector2(299, 614)
+
+[node name="Area2D23" parent="." instance=ExtResource("1_2y8os")]
+position = Vector2(157, 527)
+
+[node name="Area2D24" parent="." instance=ExtResource("1_2y8os")]
+position = Vector2(-29, 523)
+
+[node name="Area2D25" parent="." instance=ExtResource("1_2y8os")]
+position = Vector2(-30, 576)
+
+[node name="Area2D26" parent="." instance=ExtResource("1_2y8os")]
+position = Vector2(-27, 617)
+
+[node name="Area2D27" parent="." instance=ExtResource("1_2y8os")]
+position = Vector2(112, 617)
+
+[node name="Area2D28" parent="." instance=ExtResource("1_2y8os")]
+position = Vector2(173, 618)
+
+[node name="Area2D29" parent="." instance=ExtResource("1_2y8os")]
+position = Vector2(157, 468)
+
+[node name="Area2D30" parent="." instance=ExtResource("1_2y8os")]
+position = Vector2(234, 410)
+
+[node name="Area2D31" parent="." instance=ExtResource("1_2y8os")]
+position = Vector2(-31, 462)
+
+[node name="Area2D32" parent="." instance=ExtResource("1_2y8os")]
+position = Vector2(-137, 407)
+
+[node name="Area2D33" parent="." instance=ExtResource("1_2y8os")]
+position = Vector2(-140, 349)
+
+[node name="Area2D34" parent="." instance=ExtResource("1_2y8os")]
+position = Vector2(-138, 293)
+
+[node name="Area2D35" parent="." instance=ExtResource("1_2y8os")]
+position = Vector2(-137, 235)
+
+[node name="Area2D36" parent="." instance=ExtResource("1_2y8os")]
+position = Vector2(234, 353)
+
+[node name="Area2D37" parent="." instance=ExtResource("1_2y8os")]
+position = Vector2(235, 293)
+
+[node name="Area2D38" parent="." instance=ExtResource("1_2y8os")]
+position = Vector2(236, 238)
+
+[node name="Area2D39" parent="." instance=ExtResource("1_2y8os")]
+position = Vector2(-135, 169)
+
+[node name="Area2D40" parent="." instance=ExtResource("1_2y8os")]
+position = Vector2(7, 169)
+
+[node name="Area2D41" parent="." instance=ExtResource("1_2y8os")]
+position = Vector2(152, 167)
+
+[node name="Area2D42" parent="." instance=ExtResource("1_2y8os")]
+position = Vector2(232, 188)
+
+[node name="Area2D43" parent="." instance=ExtResource("1_2y8os")]
+position = Vector2(236, 165)
+
+[node name="Button Maze 9" type="Button" parent="."]
+offset_left = -2.0
+offset_top = 269.0
+offset_right = 106.0
+offset_bottom = 318.0
+text = "Go !"
+
+[node name="зомби" parent="." instance=ExtResource("3_qg1qd")]
+position = Vector2(407, 49)
+
+[node name="зомби2" parent="." instance=ExtResource("3_qg1qd")]
+position = Vector2(562, 49)
+
+[node name="зомби3" parent="." instance=ExtResource("3_qg1qd")]
+position = Vector2(692, 48)
+
+[node name="Земля" parent="." instance=ExtResource("4_xrt72")]
+position = Vector2(410, 575)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 377.0
+offset_top = 482.0
+offset_right = 439.0
+offset_bottom = 508.0
+text = "Dash go"
+
+[connection signal="pressed" from="Button Maze 9" to="." method="_on_button_maze_9_pressed"]

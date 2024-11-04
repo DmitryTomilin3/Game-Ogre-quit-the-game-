@@ -1,0 +1,142 @@
+[gd_scene load_steps=11 format=3 uid="uid://bvecmy8fno8vd"]
+
+[ext_resource type="Script" path="res://maze_5.gd" id="1_6oku0"]
+[ext_resource type="PackedScene" uid="uid://clpitim8bp2ay" path="res://area_2d.tscn" id="1_yuxvd"]
+[ext_resource type="PackedScene" uid="uid://chub6s0nj5dan" path="res://ice_cream.tscn" id="2_yqvn2"]
+[ext_resource type="Texture2D" uid="uid://dlhjp8agr5naj" path="res://boss 1.png" id="3_b2p5q"]
+[ext_resource type="Texture2D" uid="uid://5e5kkkmexs2o" path="res://boss 2.png" id="4_hn22i"]
+[ext_resource type="PackedScene" uid="uid://cnfvf786ouik2" path="res://ice_cream_2.tscn" id="5_68lfd"]
+[ext_resource type="PackedScene" uid="uid://ckj2koy585x61" path="res://ice_cream_3.tscn" id="7_04jgv"]
+[ext_resource type="PackedScene" uid="uid://x5wllo2q2fv6" path="res://ice_cream_4.tscn" id="8_k1fbm"]
+[ext_resource type="PackedScene" uid="uid://cpeaw5ntle703" path="res://ice_cream_5.tscn" id="9_e5vgn"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rmb7v"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_b2p5q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_hn22i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_b2p5q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_hn22i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_b2p5q")
+}],
+"loop": true,
+"name": &"boss 1",
+"speed": 3.0
+}]
+
+[node name="Maze 5" type="Node2D"]
+script = ExtResource("1_6oku0")
+
+[node name="Area2D" parent="." instance=ExtResource("1_yuxvd")]
+position = Vector2(920, 591)
+
+[node name="Area2D2" parent="." instance=ExtResource("1_yuxvd")]
+position = Vector2(1063, 593)
+
+[node name="Area2D3" parent="." instance=ExtResource("1_yuxvd")]
+position = Vector2(775, 589)
+
+[node name="Area2D4" parent="." instance=ExtResource("1_yuxvd")]
+position = Vector2(774, 527)
+
+[node name="Area2D5" parent="." instance=ExtResource("1_yuxvd")]
+position = Vector2(775, 466)
+
+[node name="Area2D6" parent="." instance=ExtResource("1_yuxvd")]
+position = Vector2(776, 406)
+
+[node name="Area2D7" parent="." instance=ExtResource("1_yuxvd")]
+position = Vector2(923, 408)
+
+[node name="Area2D8" parent="." instance=ExtResource("1_yuxvd")]
+position = Vector2(1069, 408)
+
+[node name="Area2D9" parent="." instance=ExtResource("1_yuxvd")]
+position = Vector2(1210, 594)
+
+[node name="Area2D10" parent="." instance=ExtResource("1_yuxvd")]
+position = Vector2(1356, 594)
+
+[node name="Area2D11" parent="." instance=ExtResource("1_yuxvd")]
+position = Vector2(1500, 593)
+
+[node name="Area2D12" parent="." instance=ExtResource("1_yuxvd")]
+position = Vector2(1648, 592)
+
+[node name="Area2D13" parent="." instance=ExtResource("1_yuxvd")]
+position = Vector2(1792, 592)
+
+[node name="Area2D14" parent="." instance=ExtResource("1_yuxvd")]
+position = Vector2(1216, 409)
+
+[node name="Area2D15" parent="." instance=ExtResource("1_yuxvd")]
+position = Vector2(1360, 411)
+
+[node name="Area2D16" parent="." instance=ExtResource("1_yuxvd")]
+position = Vector2(1937, 591)
+
+[node name="Area2D18" parent="." instance=ExtResource("1_yuxvd")]
+position = Vector2(1506, 414)
+
+[node name="Area2D21" parent="." instance=ExtResource("1_yuxvd")]
+position = Vector2(1651, 419)
+
+[node name="Area2D22" parent="." instance=ExtResource("1_yuxvd")]
+position = Vector2(1794, 421)
+
+[node name="Area2D24" parent="." instance=ExtResource("1_yuxvd")]
+position = Vector2(1940, 533)
+
+[node name="Area2D25" parent="." instance=ExtResource("1_yuxvd")]
+position = Vector2(1935, 477)
+
+[node name="Area2D26" parent="." instance=ExtResource("1_yuxvd")]
+position = Vector2(1936, 418)
+
+[node name="ice cream" parent="." instance=ExtResource("2_yqvn2")]
+position = Vector2(2068, 580)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1845, 536)
+scale = Vector2(0.381336, 0.308536)
+sprite_frames = SubResource("SpriteFrames_rmb7v")
+animation = &"boss 1"
+autoplay = "boss 1"
+frame_progress = 0.213373
+
+[node name="Ice cream 2" parent="." instance=ExtResource("5_68lfd")]
+position = Vector2(2103, 502)
+
+[node name="Boss final" type="Button" parent="."]
+offset_left = 1803.0
+offset_top = 474.0
+offset_right = 1882.0
+offset_bottom = 505.0
+text = "Attack"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 1314.0
+offset_top = 657.0
+offset_right = 1434.0
+offset_bottom = 708.0
+text = "Boss: Ice cream"
+
+[node name="Ice cream 3" parent="." instance=ExtResource("7_04jgv")]
+position = Vector2(2137, 542)
+
+[node name="Ice cream 4" parent="." instance=ExtResource("8_k1fbm")]
+position = Vector2(2175, 515)
+
+[node name="Ice cream 5" parent="." instance=ExtResource("9_e5vgn")]
+position = Vector2(2221, 531)
+
+[connection signal="pressed" from="Boss final" to="." method="_on_boss_final_pressed"]

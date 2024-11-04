@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cdofljy4qa0m0"]
+
+[ext_resource type="Script" path="res://this_is_ogre.gd" id="1_5l3rf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2e452"]
+size = Vector2(25.5, 105)
+
+[node name="this is ogre" type="Area2D"]
+script = ExtResource("1_5l3rf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_2e452")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]

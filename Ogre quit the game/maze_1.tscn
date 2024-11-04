@@ -1,0 +1,112 @@
+[gd_scene load_steps=4 format=3 uid="uid://64jbngtgwacg"]
+
+[ext_resource type="PackedScene" uid="uid://clpitim8bp2ay" path="res://area_2d.tscn" id="1_l3bjr"]
+[ext_resource type="Texture2D" uid="uid://h28tjgsa2xk7" path="res://уровень 1.png" id="1_s2ari"]
+[ext_resource type="Script" path="res://переход на второй уровень.gd" id="2_taxyf"]
+
+[node name="Maze 1" type="Node2D"]
+
+[node name="Уровень1" type="Sprite2D" parent="."]
+position = Vector2(811.5, 476.25)
+scale = Vector2(0.850521, 0.911765)
+texture = ExtResource("1_s2ari")
+
+[node name="Area2D" parent="." instance=ExtResource("1_l3bjr")]
+position = Vector2(409, 591)
+
+[node name="Area2D2" parent="." instance=ExtResource("1_l3bjr")]
+position = Vector2(266, 590)
+
+[node name="Area2D3" parent="." instance=ExtResource("1_l3bjr")]
+position = Vector2(841, 594)
+
+[node name="Area2D4" parent="." instance=ExtResource("1_l3bjr")]
+position = Vector2(555, 592)
+
+[node name="Area2D5" parent="." instance=ExtResource("1_l3bjr")]
+position = Vector2(120, 590)
+
+[node name="Area2D6" parent="." instance=ExtResource("1_l3bjr")]
+position = Vector2(700, 592)
+
+[node name="Area2D7" parent="." instance=ExtResource("1_l3bjr")]
+position = Vector2(981, 539)
+
+[node name="Area2D8" parent="." instance=ExtResource("1_l3bjr")]
+position = Vector2(982, 595)
+
+[node name="Area2D9" parent="." instance=ExtResource("1_l3bjr")]
+position = Vector2(983, 477)
+
+[node name="Area2D10" parent="." instance=ExtResource("1_l3bjr")]
+position = Vector2(983, 414)
+
+[node name="Area2D11" parent="." instance=ExtResource("1_l3bjr")]
+position = Vector2(985, 352)
+
+[node name="Area2D12" parent="." instance=ExtResource("1_l3bjr")]
+position = Vector2(983, 292)
+
+[node name="Area2D13" parent="." instance=ExtResource("1_l3bjr")]
+position = Vector2(122, 467)
+
+[node name="Area2D14" parent="." instance=ExtResource("1_l3bjr")]
+position = Vector2(121, 527)
+
+[node name="Area2D15" parent="." instance=ExtResource("1_l3bjr")]
+position = Vector2(123, 405)
+
+[node name="Area2D16" parent="." instance=ExtResource("1_l3bjr")]
+position = Vector2(268, 409)
+
+[node name="Area2D17" parent="." instance=ExtResource("1_l3bjr")]
+position = Vector2(411, 406)
+
+[node name="Area2D18" parent="." instance=ExtResource("1_l3bjr")]
+position = Vector2(556, 405)
+
+[node name="Area2D19" parent="." instance=ExtResource("1_l3bjr")]
+position = Vector2(700, 403)
+
+[node name="Area2D20" parent="." instance=ExtResource("1_l3bjr")]
+position = Vector2(698, 342)
+
+[node name="Area2D21" parent="." instance=ExtResource("1_l3bjr")]
+position = Vector2(698, 280)
+
+[node name="Area2D22" parent="." instance=ExtResource("1_l3bjr")]
+position = Vector2(703, 219)
+
+[node name="Area2D23" parent="." instance=ExtResource("1_l3bjr")]
+position = Vector2(706, 163)
+
+[node name="Area2D24" parent="." instance=ExtResource("1_l3bjr")]
+position = Vector2(706, 103)
+
+[node name="Area2D25" parent="." instance=ExtResource("1_l3bjr")]
+position = Vector2(706, 45)
+
+[node name="Area2D26" parent="." instance=ExtResource("1_l3bjr")]
+position = Vector2(849, 45)
+
+[node name="Area2D27" parent="." instance=ExtResource("1_l3bjr")]
+position = Vector2(985, 173)
+
+[node name="Area2D28" parent="." instance=ExtResource("1_l3bjr")]
+position = Vector2(986, 231)
+
+[node name="Area2D29" parent="." instance=ExtResource("1_l3bjr")]
+position = Vector2(983, 114)
+
+[node name="Area2D30" parent="." instance=ExtResource("1_l3bjr")]
+position = Vector2(996, 51)
+
+[node name="переход на второй уровень" type="Button" parent="."]
+offset_left = 818.0
+offset_top = 109.0
+offset_right = 925.0
+offset_bottom = 155.0
+text = "Go !"
+script = ExtResource("2_taxyf")
+
+[connection signal="pressed" from="переход на второй уровень" to="переход на второй уровень" method="_on_pressed"]

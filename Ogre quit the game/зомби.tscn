@@ -1,0 +1,159 @@
+[gd_scene load_steps=6 format=3 uid="uid://kedy14el5c24"]
+
+[ext_resource type="Texture2D" uid="uid://b6qfr0ejic08y" path="res://зомби.png" id="1_ci5sm"]
+[ext_resource type="Script" path="res://зомби.gd" id="1_m30kg"]
+[ext_resource type="Texture2D" uid="uid://c2lt1um2jrimn" path="res://зомби 2.png" id="3_fyn8a"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_njuse"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ci5sm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_fyn8a")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8c6eh"]
+size = Vector2(59, 62)
+
+[node name="зомби" type="Area2D"]
+script = ExtResource("1_m30kg")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1.5, 0)
+scale = Vector2(0.880597, 1)
+sprite_frames = SubResource("SpriteFrames_njuse")
+autoplay = "default"
+frame = 1
+frame_progress = 0.117203
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1.5, 0)
+shape = SubResource("RectangleShape2D_8c6eh")
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+autostart = true
+
+[node name="Timer2" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+autostart = true
+
+[node name="Timer3" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+autostart = true
+
+[node name="Timer4" type="Timer" parent="."]
+wait_time = 4.0
+one_shot = true
+autostart = true
+
+[node name="Timer5" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+autostart = true
+
+[node name="Timer6" type="Timer" parent="."]
+wait_time = 6.0
+one_shot = true
+autostart = true
+
+[node name="Timer7" type="Timer" parent="."]
+wait_time = 7.0
+one_shot = true
+autostart = true
+
+[node name="Timer8" type="Timer" parent="."]
+wait_time = 8.0
+one_shot = true
+autostart = true
+
+[node name="Timer9" type="Timer" parent="."]
+wait_time = 9.0
+one_shot = true
+autostart = true
+
+[node name="Timer10" type="Timer" parent="."]
+wait_time = 10.0
+one_shot = true
+autostart = true
+
+[node name="Timer11" type="Timer" parent="."]
+wait_time = 11.0
+one_shot = true
+autostart = true
+
+[node name="Timer12" type="Timer" parent="."]
+wait_time = 12.0
+one_shot = true
+autostart = true
+
+[node name="Timer13" type="Timer" parent="."]
+wait_time = 13.0
+one_shot = true
+autostart = true
+
+[node name="Timer14" type="Timer" parent="."]
+wait_time = 14.0
+one_shot = true
+autostart = true
+
+[node name="Timer15" type="Timer" parent="."]
+wait_time = 15.0
+one_shot = true
+autostart = true
+
+[node name="Timer16" type="Timer" parent="."]
+wait_time = 16.0
+one_shot = true
+autostart = true
+
+[node name="Timer17" type="Timer" parent="."]
+wait_time = 17.0
+one_shot = true
+autostart = true
+
+[node name="Timer18" type="Timer" parent="."]
+wait_time = 18.0
+one_shot = true
+autostart = true
+
+[node name="Timer19" type="Timer" parent="."]
+wait_time = 19.0
+one_shot = true
+autostart = true
+
+[node name="Label" type="Label" parent="."]
+offset_left = -31.0
+offset_top = -50.0
+offset_right = 27.0
+offset_bottom = -24.0
+text = "Zombie"
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Timer2" to="." method="_on_timer_2_timeout"]
+[connection signal="timeout" from="Timer3" to="." method="_on_timer_3_timeout"]
+[connection signal="timeout" from="Timer4" to="." method="_on_timer_4_timeout"]
+[connection signal="timeout" from="Timer5" to="." method="_on_timer_5_timeout"]
+[connection signal="timeout" from="Timer6" to="." method="_on_timer_6_timeout"]
+[connection signal="timeout" from="Timer7" to="." method="_on_timer_7_timeout"]
+[connection signal="timeout" from="Timer8" to="." method="_on_timer_8_timeout"]
+[connection signal="timeout" from="Timer9" to="." method="_on_timer_9_timeout"]
+[connection signal="timeout" from="Timer10" to="." method="_on_timer_10_timeout"]
+[connection signal="timeout" from="Timer11" to="." method="_on_timer_11_timeout"]
+[connection signal="timeout" from="Timer12" to="." method="_on_timer_12_timeout"]
+[connection signal="timeout" from="Timer13" to="." method="_on_timer_13_timeout"]
+[connection signal="timeout" from="Timer14" to="." method="_on_timer_14_timeout"]
+[connection signal="timeout" from="Timer15" to="." method="_on_timer_15_timeout"]
+[connection signal="timeout" from="Timer16" to="." method="_on_timer_16_timeout"]
+[connection signal="timeout" from="Timer17" to="." method="_on_timer_17_timeout"]
+[connection signal="timeout" from="Timer18" to="." method="_on_timer_18_timeout"]
+[connection signal="timeout" from="Timer19" to="." method="_on_timer_19_timeout"]

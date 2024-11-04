@@ -1,0 +1,112 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0qmu4a83dtx1"]
+
+[ext_resource type="PackedScene" uid="uid://clpitim8bp2ay" path="res://area_2d.tscn" id="1_2isua"]
+[ext_resource type="Script" path="res://Go.gd" id="2_7v7ti"]
+
+[node name="Maze 2" type="Node2D"]
+
+[node name="Area2D" parent="." instance=ExtResource("1_2isua")]
+position = Vector2(665, 14)
+
+[node name="Area2D2" parent="." instance=ExtResource("1_2isua")]
+position = Vector2(812, 13)
+
+[node name="Area2D3" parent="." instance=ExtResource("1_2isua")]
+position = Vector2(955, 14)
+
+[node name="Area2D4" parent="." instance=ExtResource("1_2isua")]
+position = Vector2(519, 16)
+
+[node name="Area2D5" parent="." instance=ExtResource("1_2isua")]
+position = Vector2(952, 74)
+
+[node name="Area2D6" parent="." instance=ExtResource("1_2isua")]
+position = Vector2(952, 137)
+
+[node name="Area2D7" parent="." instance=ExtResource("1_2isua")]
+position = Vector2(519, 76)
+
+[node name="Area2D8" parent="." instance=ExtResource("1_2isua")]
+position = Vector2(518, 135)
+
+[node name="Area2D9" parent="." instance=ExtResource("1_2isua")]
+position = Vector2(950, 202)
+
+[node name="Area2D10" parent="." instance=ExtResource("1_2isua")]
+position = Vector2(948, 266)
+
+[node name="Area2D11" parent="." instance=ExtResource("1_2isua")]
+position = Vector2(806, 266)
+
+[node name="Area2D12" parent="." instance=ExtResource("1_2isua")]
+position = Vector2(664, 264)
+
+[node name="Area2D13" parent="." instance=ExtResource("1_2isua")]
+position = Vector2(518, 264)
+
+[node name="Area2D14" parent="." instance=ExtResource("1_2isua")]
+position = Vector2(372, 234)
+
+[node name="Area2D15" parent="." instance=ExtResource("1_2isua")]
+position = Vector2(370, 140)
+
+[node name="Area2D16" parent="." instance=ExtResource("1_2isua")]
+position = Vector2(229, 234)
+
+[node name="Area2D17" parent="." instance=ExtResource("1_2isua")]
+position = Vector2(225, 139)
+
+[node name="Area2D18" parent="." instance=ExtResource("1_2isua")]
+position = Vector2(81, 139)
+
+[node name="Area2D19" parent="." instance=ExtResource("1_2isua")]
+position = Vector2(173, 291)
+
+[node name="Area2D20" parent="." instance=ExtResource("1_2isua")]
+position = Vector2(38, 197)
+
+[node name="Area2D21" parent="." instance=ExtResource("1_2isua")]
+position = Vector2(-13, 258)
+
+[node name="Area2D22" parent="." instance=ExtResource("1_2isua")]
+position = Vector2(-14, 317)
+
+[node name="Area2D23" parent="." instance=ExtResource("1_2isua")]
+position = Vector2(173, 352)
+
+[node name="Area2D24" parent="." instance=ExtResource("1_2isua")]
+position = Vector2(173, 413)
+
+[node name="Area2D25" parent="." instance=ExtResource("1_2isua")]
+position = Vector2(174, 472)
+
+[node name="Area2D26" parent="." instance=ExtResource("1_2isua")]
+position = Vector2(-11, 377)
+
+[node name="Area2D27" parent="." instance=ExtResource("1_2isua")]
+position = Vector2(-14, 434)
+
+[node name="Area2D28" parent="." instance=ExtResource("1_2isua")]
+position = Vector2(32, 589)
+
+[node name="Area2D29" parent="." instance=ExtResource("1_2isua")]
+position = Vector2(174, 590)
+
+[node name="Area2D30" parent="." instance=ExtResource("1_2isua")]
+position = Vector2(174, 532)
+
+[node name="Area2D31" parent="." instance=ExtResource("1_2isua")]
+position = Vector2(-32, 531)
+
+[node name="Area2D32" parent="." instance=ExtResource("1_2isua")]
+position = Vector2(-32, 483)
+
+[node name="Go" type="Button" parent="."]
+offset_left = 71.0
+offset_top = 517.0
+offset_right = 134.0
+offset_bottom = 561.0
+text = "Go !"
+script = ExtResource("2_7v7ti")
+
+[connection signal="pressed" from="Go" to="Go" method="_on_pressed"]
